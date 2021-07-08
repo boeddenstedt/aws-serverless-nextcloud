@@ -1,0 +1,40 @@
+[
+  {
+    "ParameterKey": "Route53Zone",
+    "ParameterValue": "Z0935248M07HIZ4TY5RL"
+  },{
+    "ParameterKey": "Domain",
+    "ParameterValue": "boedde.net"
+  },{
+    "ParameterKey": "DbUserName",
+    "ParameterValue": "boeddeadmin"
+  },{
+    "ParameterKey": "DbPassword",
+    "ParameterValue": "FYQsVNK9bxyv6d74XHYWXiJ8eZereknz"
+  },{
+    "ParameterKey": "NextCloudAdminPassword",
+    "ParameterValue": "Veud7W9z9nBxrTArMFwzUna82oZaJPNv"
+  },{
+    "ParameterKey": "IsolationLevel",
+    "ParameterValue": "Public"
+  },{
+    "ParameterKey": "EcsCapacityProvider",
+    "ParameterValue": "FARGATE_SPOT"
+  },{
+    "ParameterKey": "EcsTaskCpu",
+    "ParameterValue": "256"
+  },{
+    "ParameterKey": "EcsTaskMem",
+    "ParameterValue": "1024"
+  },{
+    "ParameterKey": "EcsMinCapacity",
+    "ParameterValue": "1"
+  },{
+    "ParameterKey": "EcsInitialDesiredCapacity",
+    "ParameterValue": "1"
+  },{
+    "ParameterKey": "RedisTshirtSize",
+    "ParameterValue": "cache.t3.micro"
+  }
+]
+
