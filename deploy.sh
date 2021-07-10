@@ -3,7 +3,7 @@
 if [[ ! -f $1 ]];then
    echo "> generating environment file from template"
    cp environment.tmpl $1
-   echo ">>> Please run the script again to deploy"
+   echo ">>> Please fill out '$1' and run the script again to deploy"
    exit 0
 fi
 source $1
