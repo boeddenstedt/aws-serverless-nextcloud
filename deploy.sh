@@ -16,6 +16,7 @@ aws cloudformation deploy \
     --template-file ${OUTPUT_TEMPLATE_FILE} \
     --stack-name ${STACK_NAME} \
     --parameter-overrides \
+        DeploymentName=${STACK_NAME} \
         DbUserName=${DB_USER_NAME} \
         DbPassword=${DB_PASS} \
         NextCloudDbName=${DB_NAME} \
