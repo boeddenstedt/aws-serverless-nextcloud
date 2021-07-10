@@ -115,7 +115,7 @@ Parameters:
   NextCloudVersion:
     Description: Nextcloud Version to be deployed (no downgrade possible)
     Type: String
-    Default: 21.0.1
+    Default: 22.0.0
   S3SecretRotationSerial:
     Description: In order to rotate long-term S3 credentials increase by 1
     Type: Number
@@ -160,7 +160,7 @@ Parameters:
   EcsMaxCapacity:
     Description: Maximum number of ECS Containers to provision
     Type: Number
-    Default: 25
+    Default: 5
   EcsTargetCpuUtilization:
     Description: Threshold to be reached for scaling in/out
     Type: Number
