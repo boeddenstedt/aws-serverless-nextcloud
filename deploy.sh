@@ -12,15 +12,12 @@ aws cloudformation package \
             --template-file ecs-nextcloud.yml \
             --s3-bucket ${CFN_NC_ARTEFACT} \
             --output-template-file ${OUTPUT_TEMPLATE_FILE}
+
 aws cloudformation deploy \
     --template-file ${OUTPUT_TEMPLATE_FILE} \
     --stack-name ${STACK_NAME} \
     --parameter-overrides \
-        DeploymentName=${STACK_NAME} \
-        DbUserName=${DB_USER_NAME} \
         DbPassword=${DB_PASS} \
-        NextCloudDbName=${DB_NAME} \
-        NextCloudAdminUser=${NC_ADMIN_USER} \
         NextCloudAdminPassword=${NC_ADMIN_PASS} \
         Route53Zone=${R53_ZONE} \
         Domain=${R53_DOMAIN} \
@@ -34,3 +31,4 @@ aws cloudformation deploy \
         NextCloudVersion=${NC_VERSION} \
     --capabilities CAPABILITY_IAM \
     --tags env=${TAG_ENV} service=${TAG_SERVICE}
+        
